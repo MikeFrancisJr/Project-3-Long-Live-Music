@@ -28,15 +28,15 @@ answers = ("T", "F", "T", "F", "T")
 # Create a variable that holds the length of questions
 numberOfQuestions = len(questions)
 
-# Create an empty variable that holds the value of the user's guess
-userGuess = ""
-
 # Create a variable that counts the number of turns
 count = 0
 
 # Create a for loop that loops through the each question in the tuple
 for index in range(numberOfQuestions):
   print(questions[index])
+
+  # Create a variable that holds an empty value for the user's guess
+  userGuess = ""
   
   # Create a loop that continues as long as user's guess doesn't equal 'T' or 'F'
   while(userGuess != "T" and userGuess != "F"):
@@ -48,9 +48,6 @@ for index in range(numberOfQuestions):
     # Compare and track if the user's guess is the same as the answer in the tuple
     if(userGuess == answers[index]):
       count += 1
-
-  # Create a variable with a default value for user's guess inside the while loop 
-  userGuess = ""
 
 # Display how many the user guessed correctly out of total number of of questions
 print(f"You answered {count} out of {numberOfQuestions} correctly!")
