@@ -52,14 +52,17 @@ for index in range(numberOfQuestions):
   # Create a variable with a default value for user's guess inside the while loop 
   userGuess = ""
 
+# Display how many the user guessed correctly out of total number of of questions
 print(f"You answered {count} out of {numberOfQuestions} correctly!")
 
 # If user guesses all 5 correctly
 if(count == 5):
   print("You are a 'High Level' music fan! Congratulations and thanks for playing!")
 
+# If user guesses 3 or more correctly
 elif(count >= 3):
   print("You are a 'Mediocre' music fan. Good job and thanks for playing!")
 
+# Any guesses less than 3 correct
 else:
   print("You are a 'Low Level' music fan.  Sorry, but thanks for playing.")
